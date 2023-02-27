@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="flex">
+      <form title="ФОРМА ОБРАТНОЙ СВЯЗИ" class="form">
+        <h1>ФОРМА ОБРАТНОЙ СВЯЗИ</h1>
+        <div class="paragraph">
+            <label for="name">НАЗВАНИЕ ОРГАНИЗАЦИИ / ВАШЕ ИМЯ:</label>
+            <input type="text" id="name" required class="input" />
+        </div>
+        <br />
+
+        <div class="paragraph">
+            <label for="tel">ВАШ ТЕЛЕФОН:</label>
+            <input type="tel" id="tel" required class="input" />
+        </div>
+        <br />
+
+        <div class="paragraph">
+            <label for="email">ВАШ E-MAIL:</label>
+            <input type="text" id="email" required class="input" />
+        </div>
+        <br />
+        <h5 class="title">ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</h5>
+        <br />
+
+        <div class="paragraph">
+            <label for="topic">ТЕМА ПИСЬМА:</label>
+            <select name="topic" id="topic" class="input">
+            <option value="-выбрать тему-">-выбрать тему-</option>
+            <option value="Отпуск">Отпуск</option>
+            <option value="Семья">Семья</option>
+            <option value="Друзья">Друзья</option></select
+            >
+        </div>
+        <br />
+
+        <div class="paragraph">
+            <label for="letter">ТЕМА ПИСЬМА:</label>
+            <textarea name="letter" id="letter" cols="30" rows="10" required></textarea>
+        </div>
+        <h5 class="title">РЕШИТЕ ПРИМЕР И НАЖМИТЕ "ОТПРАВИТЬ"</h5>
+
+        <div class="paragraph">
+            <label for="task">3 + 7 = </label>
+            <input type="task" id="task" required />
+        </div>
+        <br />
+        <button class="button">Отправить</button>
+        <button class="button" type="reset">Очистить</button>
+      </form>
+
+      <form class="form form__second">
+        <h1 class="reg">Регистрация</h1>
+        <h5 class="error">Тут высвечивается ошибка</h5>
+        <div class="paragrap">
+          <label for="login" class="label">Логин: </label>
+          <input type="text" id="login" required />
+        </div>
+        <br><br>
+
+        <div class="paragrap">
+          <label for="password" class="label">Пароль: </label>
+          <input type="password" id="password" required />
+        </div>
+        <br><br>
+
+        <div class="paragrap">
+          <label for="password">Подтверджение пароля: </label>
+          <input type="password" id="password" required />
+        </div>
+        <br><br>
+
+        <div class="paragrap">
+          <label for="email">E-mail адрес: </label>
+          <input type="email" id="email" required />
+        </div>
+        <br><br>
+
+        <div class="paragrap">
+          <label for="text">Полное имя: </label>
+          <input type="text" id="text" required />
+        </div>
+        <br><br>
+
+        
+        <div class="paragrap">
+          <label for="number">Код: </label>
+          <textarea name="letter" id="letter" cols="20" rows="2" required></textarea>
+        </div>
+          <img src="./img/validation.png" alt="Image" class="img">
+        
+        <br><br>
+
+        <button class="but">Регистрация</button>
+      </form>
+    </div>
+  </body>
 </html>
